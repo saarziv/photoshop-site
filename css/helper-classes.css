@@ -1,0 +1,21 @@
+/*helper classes - meant to speed up the dev process.*/ 
+/*every time i will write one of these tags these styling will apply.*/
+p,
+ul li,
+ol li {
+    font-size: 17px;
+    line-height: 23px
+}
+
+.bgRed {
+    background-color: red;
+}
+
+.alignLeft {
+    float: left;
+}
+
+.alignRight {
+    float: right;
+}
+

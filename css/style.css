@@ -1,0 +1,359 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+
+/*adding a font from otf file.*/
+@font-face {
+    font-family:"HelveticaNeue-Thin";
+    src: local('HelveticaNeue-Thin.otf'),url(HelveticaNeue-Thin.otf) format('opentype');
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    font-size: 20px;
+    line-height: 120%;
+    color: #fff;
+}
+.clear-fix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+.row {
+     max-width: 1140px;
+    margin : 0 auto;
+    padding: 20px 10px;
+}
+
+/* RESUABLE COMPONENTS
+-----------------------------
+*/
+
+/*HEADINGS*/
+h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 260%;
+    padding: 20px;
+}
+h3 {
+    text-transform: uppercase;
+}
+
+/*section*/
+section {
+    padding-bottom: 30px;
+}
+
+/*BUTTONS*/ 
+.btn {
+    display: inline-block;
+    padding: 15px 15px;
+    height: 70px;
+    width: 355px;
+    border-radius: 200px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    text-transform: uppercase;
+    
+}
+
+.cta-btn {
+    background-color: #282828;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.cta-btn:hover,
+.cta-btn:active {
+    background-color: #383737;
+    transition: background-color 0.3s;
+    
+}
+
+/*
+
+RESUABLE COMPONENTS END
+-----------------------------
+*/
+
+
+
+/*
+-----------------------------
+HERO SECTION START
+-----------------------------
+*/
+
+#hero {
+    background-image:linear-gradient(rgba(218, 51, 46,0.6), rgba(218, 51, 46,0.6)), url(img/hero-bg.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.cta {
+    margin-top: 90px;
+   
+}
+
+.nav-main { float: right; margin-top: 9px; }
+
+.nav-main li {
+    display: inline-block;
+    margin: 5px 0px 0 20px;
+    padding: 3px;
+    
+}
+.nav-main a:link, 
+.nav-main a:visited {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #fff transpaernt;
+    transition: border-bottom 0.2s,color 0.2s;
+}
+
+.nav-main a:hover, 
+.nav-main a:active {
+    border-bottom: 3px solid #fff;
+}
+
+.imgs {
+    position: absolute;
+    right: 270px;
+}
+.cta-info {
+    width: 55%;
+}
+
+.cta-info p {
+    font-size: 160%;
+    padding: 20px;
+    line-height: 125%;
+
+}
+.cta-btn span {
+    font-size: 90%;
+    font-weight: 700;
+}
+
+.small-mobile-logo {
+    margin: 0 15px;
+    vertical-align: middle;
+    height: 40px;
+}
+
+.hero-iphone {
+    width: 85%;;
+    position: relative;
+    margin-bottom: -220px;
+}
+
+.mobile-app {
+    padding: 7px;
+    width:211px;
+}
+
+
+/*
+-----------------------------
+HERO SECTION END
+-----------------------------
+*/
+
+#app-section {
+    color: #8a8a8a;
+}
+
+.container {
+     max-width: 1140px;
+    margin : 0 auto;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.custom-33-col {
+    padding: 10px 40px;
+    flex-basis: 33.33%;
+}
+
+.custom-row {
+    margin-top: 40px;
+    display: flex;
+}
+
+.app-heading-para {
+    font-family: 'HelveticaNeue-Thin';
+/*    font-size: 110%;*/
+    font-size: 22px;
+    line-height: 28px;
+    padding: 0px 130px;
+    
+}
+.custom-33-col h3 {
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #000;
+    
+}
+.custom-33-col p {
+/*    padding: 30px ;*/
+    font-family: HelveticaNeue-Thin;
+    font-size: 90%;
+    line-height: 120%;
+}
+/*
+-----------------------------
+ DOWNLOAD SECTION 
+-----------------------------
+*/
+#download-section {
+    /*linear-gradient(rgba(212, 219, 217,0.6),rgba(212, 219, 217,0.6)),*/
+    background-image: url(img/lady-clown-2.png);
+    background-size: cover;
+/*    background-attachment: fixed;*/
+    
+    text-align: left;
+    
+
+}
+#download-section .container {
+    text-align: left;
+}
+#download-section h2 {
+    margin: 180px 40px 30px 0px;
+    padding: 0px;
+}
+#download-section p {
+    padding: 30px 350px 30px 0px;
+    font-size: 120%;
+    line-height: 125%;
+    font-family: 'HelveticaNeue-Thin';
+    color: #585858;
+}
+
+.custom-66-col {
+/*    width: 50%;*/
+    width:66.66%;
+/*    width: 56%;*/
+/*    float:left;*/
+    display: inline-block;
+    text-align: left;
+}
+.download-btn {
+    width:141px;
+    height: 49px;
+    font-size: 80%;
+    padding: 20px;
+    background-color: #d9332d;
+    font-weight: 700;
+    margin:50px 0px 0px 14px;
+    transform: background-color 0.3s;
+}
+.download-btn:hover,
+.download-btn:active {
+    background-color: #c33939;
+    transform: background-color 0.3s;
+}
+
+h2 span {
+    color: #f55150;
+}
+/*
+-----------------------------
+ FOOTER SECTION 
+-----------------------------
+*/
+
+#footer-section {
+    background-color: #2e2e38;
+    padding-top: 100px;
+}
+#footer-section .custom-33-col {
+    padding-left: 0px;
+}
+
+#footer-section cite {
+    display: block;
+    margin-bottom: 30px;
+}
+#footer-section cite span {
+    font-size: 75%;
+    display: inline-block;
+    vertical-align: middle;
+}
+cite img {
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+#footer-section .container {
+    text-align: left;
+}
+#footer-section .mobile-app {
+    margin-bottom: 80px;     
+}
+#footer-section h4{
+    padding-bottom: 30px;
+    font-weight: 700;
+}
+#footer-section h5 {
+    font-size: 70%;
+}
+#footer-section span {
+    font-size: 55%;
+}
+.footer-p {
+    font-family: 'HelveticaNeue-Thin';
+    font-size: 75%;
+
+}
+#footer-section h5 {
+    font-weight: 700;
+}
+
+.footer-suit {
+    margin-bottom: 30px;
+}
+
+.footer-content {
+    display: flex;
+    width: 100%;
+}
+.block {
+    display: block;
+}
+/*
+-----------------------------
+ COPYRIGHT FOOTER
+-----------------------------
+*/
+footer {
+    background-color: #d7dedc;
+}
+.copyright {
+    color:#000;
+}
+
+.copyright-span {
+    font-size: 125%;
+}
+
+.footer-logo {
+    vertical-align: middle;
+}
